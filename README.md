@@ -24,5 +24,7 @@ Check this by typing ```/get creator``` in conference chat.
 If creator == bot_skypename you will have error. 
 
 
-Then type ```/get name```
+Type ```/get name``` to get conference ID and put this string into skypebot line 37.
+
+It must look like: ```conferenceID = '#username1/$username2;c7cddac89532bab3'```
 
