@@ -33,11 +33,14 @@ if len(sys.argv) < 3:
 
 accountName = sys.argv[1]
 accountPsw  = sys.argv[2]
+
 # don't work if #accountName/...
-conferenceID = '#sergey.brin1/$zhovner;c7cddac89532bab3'
+conferenceID = 'TYPE_HERE_CONFERENCE_ID'
+
+# /golive token (not necessarily)
 conferenceToken = 'confa'
 
-Admins = ['zhovner','sergey.brin1','runsofaster']
+Admins = ['skypename1','skypename2','skypename3']
 
 
 
@@ -45,8 +48,8 @@ if conferenceID == 'TYPE_HERE_CONFERENCE_ID':
 	print 'You must set conference ID in this file line 36.\nType "/get name" in conference to get ID.'
 	sys.exit()
 	
-loggedIn		= False;
-isCallFinished	= False;
+loggedIn	= False
+isCallFinished	= False
 
 #----------------------------------------------------------------------------------
 # Stop when press Ctrl+C  
@@ -59,6 +62,7 @@ def shutdown(signal, frame):
 	while not isCallFinished:
 		sleep(1)
 	MySkype.stop()
+	sys.exit()
 
 signal.signal(signal.SIGINT, shutdown)
 
