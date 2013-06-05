@@ -112,7 +112,7 @@ while loggedIn == False:
 # global liveConversation
 print 'MySkype.GetConversationByIdentity'
 
-global liveConversation
+#global liveConversation
 liveConversation = MySkype.GetConversationByIdentity(conferenceID)
 
 
