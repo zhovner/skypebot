@@ -3,6 +3,8 @@
 It can read commands from chat to up/hangup the call. 
 
 
+# Skypekit support discontinued but you can try find working version in the wild web
+
 ## How to use
 
 ### 1) Download the Skypekit
